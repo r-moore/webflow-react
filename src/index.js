@@ -56,7 +56,7 @@ const CountryList = () => {
     if (data.country)
       return (
         <ul>
-          <a href="/react" className="underline text-blue-500">
+          <a href="/react" className="underline text-blue-500 py-10">
             Back to country list
           </a>
           <li>
@@ -65,25 +65,6 @@ const CountryList = () => {
           <li>Continent: {data.country.continent.name}</li>
           <li>Currency: {data.country.currency}</li>
           <li>Phone: +{data.country.phone}</li>
-          <li>
-            Languages:{' '}
-            <ul className="flex-col pl-5">
-              {data.country.languages.map(({ name }) => (
-                <li>{name}</li>
-              ))}
-            </ul>
-          </li>
-          <li>Capital: {data.country.capital}</li>
-          {data.country.states.length > 0 && (
-            <li>
-              States:{' '}
-              <ul className="flex-col pl-5">
-                {data.country.states.map(({ name }) => (
-                  <li>{name}</li>
-                ))}
-              </ul>
-            </li>
-          )}
         </ul>
       );
     else if (data.countries)
