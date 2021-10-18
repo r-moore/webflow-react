@@ -56,7 +56,7 @@ const CountryList = () => {
     if (data.country)
       return (
         <ul>
-          <a href="/" className="underline text-blue-500">
+          <a href="/react" className="underline text-blue-500">
             Back to country list
           </a>
           <li>
