@@ -92,7 +92,7 @@ const CountryList = () => {
           {data.countries
             .sort(({ name: a }, { name: b }) => (a < b ? -1 : a > b ? 1 : 0))
             .map(({ name, code }) => (
-              <a href={`/?=${code}`} key={code}>
+              <a href={`/react?=${code}`} key={code}>
                 <div className="p-5 rounded shadow bg-blue-100 text-gray-800 hover:bg-blue-300">
                   {name}
                 </div>
